@@ -1,0 +1,133 @@
+.InputsWrapper {
+  display: flex;
+  gap: 32px;
+}
+
+.InputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 1;
+  gap: 8px;
+}
+
+.InputWrapper > label {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #716f6f;
+  font-weight: 600;
+}
+
+.Input {
+  max-width: 160px;
+  border-radius: 8px;
+  padding: 12px 0 12px 24px;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-family: 'poppins';
+  flex-shrink: 1;
+  border: 1px solid #dcdcdc;
+  transition: border-color 0.3s ease;
+  caret-color: #854dffed;
+}
+
+.Input:focus {
+  outline: 1px solid #854dffed;
+  outline-offset: -1px;
+}
+
+.ButtonWrapper {
+  width: 100%;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.ButtonWrapper > div {
+  width: 100%;
+  height: 1px;
+  background-color: #dcdcdc;
+}
+
+.ButtonWrapper > button {
+  position: absolute;
+  border: none;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  height: 96px;
+  background-color: #854dff;
+  border-radius: 316px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.ButtonWrapper > button:hover {
+  background-color: black;
+}
+
+.ButtonWrapper > button > img {
+  width: 42px;
+  height: 42px;
+  margin: 2px;
+}
+
+.ErrorMessage {
+  display: flex;
+  font-size: 14px;
+  color: #ff5959;
+  margin: 0;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+  .ButtonWrapper {
+    margin-top: 20px;
+  }
+  .ButtonWrapper > button {
+    left: 50%;
+    margin-left: -32px;
+    right: auto;
+    width: 64px;
+    height: 64px;
+  }
+  .ButtonWrapper > button > img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 770px) {
+  .InputsWrapper {
+    gap: 16px;
+  }
+  .InputWrapper > label {
+    font-size: 12px;
+  }
+  .Input {
+    max-width: 73px;
+    font-size: 20px;
+    padding: 12px 0 12px 16px;
+  }
+  .ButtonWrapper {
+    margin-top: 20px;
+  }
+  .ButtonWrapper > button {
+    left: 50%;
+    margin-left: -32px;
+    right: auto;
+    width: 64px;
+    height: 64px;
+  }
+  .ButtonWrapper > button > img {
+    width: 24px;
+    height: 24px;
+  }
+  .ErrorMessage {
+    font-size: 12px;
+  }
+}

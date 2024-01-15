@@ -1,0 +1,45 @@
+.ResultsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.TextWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.Result {
+  font-size: 104px;
+  color: #8e59ff;
+  line-height: 110%;
+  font-weight: 700;
+  font-style: italic;
+  margin: 0;
+  letter-spacing: -2px;
+  text-wrap: nowrap;
+}
+
+.Label {
+  font-size: 104px;
+  color: black;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 110%;
+  margin: 0;
+  letter-spacing: -2px;
+  text-wrap: nowrap;
+}
+
+@media (max-width: 770px) {
+  .Result {
+    font-size: 56px;
+  }
+
+  .Label {
+    font-size: 56px;
+  }
+}
