@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './Results.module.css'
+import styles from './Results.module.css';
 
-function Results({days, months, years}) {
+function Results({ days, months, years }) {
   return (
     <div className={`${styles.ResultsWrapper}`}>
       <span className={`${styles.TextWrapper}`}>
-        <p className={`${styles.Result}`}>{years ? years : '---'}</p>
+        <h1 className={`${styles.Result}`}>{years ? years : '---'}</h1>
         <p className={`${styles.Label}`}>years</p>
       </span>
       <span className={`${styles.TextWrapper}`}>
