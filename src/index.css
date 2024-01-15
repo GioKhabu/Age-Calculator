@@ -1,7 +1,17 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+#root {
+  height: 100%;
+  width: 100%;
+}
 body {
   margin: 0;
   background-color: #dcdcdc;
   font-family: 'Poppins', sans-serif;
+  height: inherit;
+  width: inherit;
 }
 
 code {

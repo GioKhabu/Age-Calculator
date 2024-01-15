@@ -38,7 +38,7 @@
 }
 
 .ButtonWrapper {
-  width: 100%;
+  min-width: 100%;
   height: 96px;
   display: flex;
   align-items: center;
@@ -46,8 +46,8 @@
 }
 
 .ButtonWrapper > div {
-  width: 100%;
-  height: 1px;
+  min-width: 100%;
+  min-height: 1px;
   background-color: #dcdcdc;
 }
 

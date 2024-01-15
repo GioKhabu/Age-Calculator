@@ -150,8 +150,11 @@ function Inputs({ setDays, setMonths, setYears }) {
       <form onSubmit={calculateAge}>
         <div className={`${styles.InputsWrapper}`}>
           <span className={`${styles.InputWrapper}`}>
-            <label style={dayColor}>DAY</label>
+            <label htmlFor="day" style={dayColor}>
+              DAY
+            </label>
             <input
+              id="day"
               type="text"
               className={`${styles.Input}`}
               placeholder="DD"
@@ -168,8 +171,11 @@ function Inputs({ setDays, setMonths, setYears }) {
             </p>
           </span>
           <span className={`${styles.InputWrapper}`}>
-            <label style={monthColor}>MONTH</label>
+            <label htmlFor="month" style={monthColor}>
+              MONTH
+            </label>
             <input
+              id="month"
               type="text"
               className={`${styles.Input}`}
               placeholder="MM"
@@ -186,8 +192,11 @@ function Inputs({ setDays, setMonths, setYears }) {
             </p>
           </span>
           <span className={`${styles.InputWrapper}`}>
-            <label style={yearColor}>YEAR</label>
+            <label htmlFor="year" style={yearColor}>
+              YEAR
+            </label>
             <input
+              id="year"
               type="text"
               className={`${styles.Input}`}
               placeholder="YYYY"
